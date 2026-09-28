@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20211d">
+  <meta name="description" content="AHAD RESTAURANT — seasonal cooking, generous hospitality, and a table waiting for you.">
+  <title>AHAD RESTAURANT | A seat at our table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="AHAD RESTAURANT home">
+        <span class="brand-name">AHAD RESTAURANT</span>
+        <span class="brand-note">A SEAT AT OUR TABLE</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Our story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#testimonials">Kind words</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="button nav-book js-open-reservation" type="button">Book a table <span class="button-arrow" aria-hidden="true">↗</span></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <span class="eyebrow">Good food. Good company.</span>
+        <h1 id="hero-title">A little more <em>time</em><br>around the table.</h1>
+        <p class="hero-copy">Seasonal ingredients, thoughtful cooking, and the kind of welcome that makes you want to stay a little longer.</p>
+        <div class="hero-actions">
+          <button class="button js-open-reservation" type="button">Book a table <span class="button-arrow" aria-hidden="true">↗</span></button>
+          <a class="button button--outline" href="#menu">Explore the menu <span class="button-arrow" aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <span class="hero-caption">Thoughtfully made, meant to be shared</span>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div class="about-visual" aria-label="The warm dining room at AHAD RESTAURANT">
+          <img class="about-main-image" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=82" alt="An intimate restaurant dining room set for dinner" loading="lazy">
+          <img class="about-detail-image" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=82" alt="A chef carefully plating a seasonal dish" loading="lazy">
+          <div class="about-mark" aria-hidden="true"><span>✳</span>Made with<br>intention</div>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">A little about us</span>
+          <h2 class="section-title" id="about-title">Rooted in good food.<br>Made for gathering.</h2>
+          <p class="section-copy">AHAD began with a simple idea: the best meals are the ones we share. What started as a family table has grown into a neighborhood gathering place, where each plate tells a story of honest ingredients and generous hospitality.</p>
+          <p class="section-copy section-copy--secondary">Our kitchen follows the seasons, working closely with local growers and makers. Nothing fussy, nothing rushed: just thoughtful cooking, made fresh and served with care.</p>
+          <div class="about-note"><strong>A note from Chef Ahad</strong><span>“Cook with the season. Serve with the heart.”</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <div class="menu-heading">
+          <div><span class="eyebrow">From our kitchen</span><h2 class="section-title" id="menu-title">Made for the moment.</h2></div>
+          <p class="section-copy">A few favorites from a menu that changes with the season. Come hungry; leave happy.</p>
+        </div>
+        <div class="menu-filters" role="group" aria-label="Filter menu by category">
+          <button class="filter-button" type="button" data-category="all" aria-pressed="true">All dishes</button>
+          <button class="filter-button" type="button" data-category="appetizers" aria-pressed="false">Appetizers</button>
+          <button class="filter-button" type="button" data-category="mains" aria-pressed="false">Main course</button>
+          <button class="filter-button" type="button" data-category="desserts" aria-pressed="false">Desserts</button>
+          <button class="filter-button" type="button" data-category="drinks" aria-pressed="false">Drinks</button>
+        </div>
+        <div class="menu-grid" id="menu-grid" aria-live="polite">
+          <!-- Edit these menu items, image URLs, descriptions, and prices to match your menu. -->
+          <article class="menu-item" data-category="appetizers">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=78" alt="Roasted seasonal vegetables" loading="lazy">
+            <div><div class="menu-item-top"><h3>Market Garden Salad</h3><span class="menu-price">$14</span></div><p>Little gem, ripe tomato, shaved fennel, lemon-herb dressing.</p></div>
+          </article>
+          <article class="menu-item" data-category="appetizers">
+            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=400&q=78" alt="Freshly baked bread with olive oil" loading="lazy">
+            <div><div class="menu-item-top"><h3>Warm Hearth Bread</h3><span class="menu-price">$11</span></div><p>House sourdough, cultured butter, rosemary sea salt.</p></div>
+          </article>
+          <article class="menu-item" data-category="appetizers">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=78" alt="A colorful bowl of fresh seasonal ingredients" loading="lazy">
+            <div><div class="menu-item-top"><h3>Whipped Feta</h3><span class="menu-price">$13</span></div><p>Local honey, charred grapes, warm flatbread, cracked pepper.</p></div>
+          </article>
+          <article class="menu-item" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=78" alt="Herb-roasted chicken with vegetables" loading="lazy">
+            <div><div class="menu-item-top"><h3>Sunday Roast Chicken</h3><span class="menu-price">$29</span></div><p>Free-range chicken, crispy potatoes, pan jus, garden herbs.</p></div>
+          </article>
+          <article class="menu-item" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=400&q=78" alt="Seasonal pasta with parmesan" loading="lazy">
+            <div><div class="menu-item-top"><h3>Hand-cut Pappardelle</h3><span class="menu-price">$26</span></div><p>Slow-braised mushrooms, parmesan, a little truffle butter.</p></div>
+          </article>
+          <article class="menu-item" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=400&q=78" alt="Pan-seared fish with fresh herbs" loading="lazy">
+            <div><div class="menu-item-top"><h3>Catch of the Day</h3><span class="menu-price">$31</span></div><p>Simply seared, butter beans, bright greens, preserved lemon.</p></div>
+          </article>
+          <article class="menu-item" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=78" alt="A slice of layered celebration cake" loading="lazy">
+            <div><div class="menu-item-top"><h3>Olive Oil Cake</h3><span class="menu-price">$12</span></div><p>Seasonal citrus, softly whipped cream, a pinch of sea salt.</p></div>
+          </article>
+          <article class="menu-item" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=400&q=78" alt="A scoop of house-made ice cream" loading="lazy">
+            <div><div class="menu-item-top"><h3>House-made Gelato</h3><span class="menu-price">$9</span></div><p>Two scoops, rotating flavors from our little kitchen.</p></div>
+          </article>
+          <article class="menu-item" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=400&q=78" alt="A refreshing fruit and herb drink" loading="lazy">
+            <div><div class="menu-item-top"><h3>Garden Spritz</h3><span class="menu-price">$15</span></div><p>House aperitif, sparkling wine, seasonal fruit, fresh herbs.</p></div>
+          </article>
+          <article class="menu-item" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=400&q=78" alt="A glass of red wine" loading="lazy">
+            <div><div class="menu-item-top"><h3>Something by the Glass</h3><span class="menu-price">$14</span></div><p>A small, thoughtful list of wines from good people.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band" aria-label="Our approach to hospitality">
+      <div class="quote-inner"><div class="quote-mark" aria-hidden="true">“</div><blockquote>We believe a meal should feel like being welcomed into someone's home.</blockquote><p>Pull up a chair. You're among friends.</p></div>
+    </section>
+
+    <section class="testimonials" id="testimonials" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="testimonial-head">
+          <div><span class="eyebrow">Kind words</span><h2 class="section-title" id="reviews-title">Don't just take our word.</h2></div>
+          <div class="slider-controls" aria-label="Testimonial controls">
+            <button class="slider-button" id="reviews-prev" type="button" aria-label="Previous reviews">‹</button>
+            <button class="slider-button" id="reviews-next" type="button" aria-label="Next reviews">›</button>
+          </div>
+        </div>
+        <div class="review-grid" id="review-grid" aria-live="polite" aria-atomic="true"></div>
+      </div>
+    </section>
+
+    <section class="booking-band" aria-labelledby="booking-title">
+      <div><span class="eyebrow">Your table is waiting</span><h2 class="section-title" id="booking-title">Make an evening of it.</h2></div>
+      <button class="button button--dark js-open-reservation" type="button">Reserve your table <span class="button-arrow" aria-hidden="true">↗</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home"><span class="brand-name">AHAD RESTAURANT</span><span class="brand-note">A SEAT AT OUR TABLE</span></a>
+          <p>Seasonal cooking, generous hospitality, and a table waiting for you.</p>
+          <div class="social-links" aria-label="Social media">
+            <a href="https://www.instagram.com/" aria-label="Instagram">ig</a>
+            <a href="https://www.facebook.com/" aria-label="Facebook">fb</a>
+            <a href="https://www.tiktok.com/" aria-label="TikTok">tk</a>
+          </div>
+        </div>
+        <div class="footer-column"><h3>Come find us</h3><p>123 Main Street<br>Your City, ST 00000</p><a href="tel:+15550123456">(555) 012-3456</a><a href="mailto:hello@ahadrestaurant.com">hello@ahadrestaurant.com</a></div>
+        <div class="footer-column"><h3>At the table</h3><p>Tuesday – Thursday<br>5:00 pm – 9:00 pm</p><p>Friday – Sunday<br>5:00 pm – 10:00 pm</p></div>
+        <div class="footer-column"><h3>A few things</h3><a href="#about">Our story</a><a href="#menu">The menu</a><a href="#testimonials">Guest notes</a><button class="footer-reserve js-open-reservation" type="button">Book a table</button></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="current-year"></span> AHAD RESTAURANT. Made with care.</span><span>Menu and hours may change with the seasons.</span></div>
+    </div>
+  </footer>
+
+  <dialog class="reservation-dialog" id="reservation-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <button class="dialog-close" type="button" aria-label="Close reservation form">×</button>
+      <span class="eyebrow">A place at the table</span>
+      <h2 id="dialog-title">Let's make a date.</h2>
+      <p>Send us your preferred details and we'll be in touch to confirm.</p>
+      <form class="booking-form" id="booking-form">
+        <div class="field field--wide"><label for="guest-name">Name</label><input id="guest-name" name="name" autocomplete="name" required placeholder="Your name"></div>
+        <div class="field field--wide"><label for="guest-email">Email</label><input id="guest-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+        <div class="field"><label for="booking-date">Date</label><input id="booking-date" name="date" type="date" required></div>
+        <div class="field"><label for="booking-time">Time</label><select id="booking-time" name="time" required><option value="">Choose a time</option><option>5:00 pm</option><option>5:30 pm</option><option>6:00 pm</option><option>6:30 pm</option><option>7:00 pm</option><option>7:30 pm</option><option>8:00 pm</option><option>8:30 pm</option><option>9:00 pm</option></select></div>
+        <div class="field field--wide"><label for="guest-count">Number of guests</label><select id="guest-count" name="guests" required><option value="">Choose a party size</option><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>7+ guests</option></select></div>
+        <button class="button button--dark" type="submit">Request a reservation <span class="button-arrow" aria-hidden="true">↗</span></button>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>

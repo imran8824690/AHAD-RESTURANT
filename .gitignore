@@ -1,0 +1,3 @@
+backend/data/reservations.json
+backend/data/*.tmp
+node_modules/
